@@ -1,0 +1,14 @@
+[Unit]
+Description=Claw VM Bridge DE (#de)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h
+Environment="PATH=%h/.npm-global/bin:%h/.local/bin:%h/bin:/usr/local/bin:/usr/bin:/bin"
+ExecStart=%h/.openclaw/vm_bridge_loop_de.sh
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target

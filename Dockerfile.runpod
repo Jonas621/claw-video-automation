@@ -1,0 +1,10 @@
+FROM timpietruskyblibla/runpod-worker-comfy:3.6.0-base
+
+# Create symlinks from ComfyUI model dirs to network volume
+RUN rm -rf /comfyui/models/diffusion_models /comfyui/models/text_encoders /comfyui/models/vae /comfyui/models/clip /comfyui/models/unet /comfyui/models/loras && \
+    ln -s /runpod-volume/diffusion_models /comfyui/models/diffusion_models && \
+    ln -s /runpod-volume/text_encoders /comfyui/models/text_encoders && \
+    ln -s /runpod-volume/text_encoders /comfyui/models/clip && \
+    ln -s /runpod-volume/vae /comfyui/models/vae && \
+    ln -s /runpod-volume/diffusion_models /comfyui/models/unet && \
+    ln -s /runpod-volume/loras /comfyui/models/loras

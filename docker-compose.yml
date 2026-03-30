@@ -1,0 +1,38 @@
+services:
+  mac_api:
+    build: .
+    ports:
+      - "127.0.0.1:8787:8787"
+    volumes:
+      - ./config:/app/config:ro
+      - ./output:/app/output
+      - ./logs:/app/logs
+      - ./state:/app/state
+      - /Users/YOUR_USERNAME/Music/bgm_samples:/music/bgm_samples:ro
+      - /Users/YOUR_USERNAME/ComfyUI/output:/comfyui/output
+    environment:
+      COMFYUI_API_URL: http://host.docker.internal:8188
+      COMFYUI_WORKFLOW_FILE: /app/comfy/workflow_wan22_t2v_5b_api.json
+      COMFYUI_OUTPUT_DIR: /comfyui/output
+      COMFYUI_ERR_LOG_FILE: /app/logs/comfyui.err.log
+      BGM_SAMPLE_DIR: /music/bgm_samples
+      VOICEOVER_EDGE_TTS_BIN: /usr/local/bin/edge-tts
+      # macos_say existiert nicht in Linux – edge_tts wird direkt genutzt
+      VOICEOVER_EDGE_FALLBACK_ENABLED: "false"
+      VOICEOVER_EDGE_FALLBACK_BACKEND: ""
+      OLLAMA_API_URL: http://host.docker.internal:11434
+      VOICEOVER_CAPTIONS_FONT_FILE: /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+      TEXT_BEATS_FONT_FILE: /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+      TEXT_BEATS_EXTRA_FONT_FILE: /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+      MAC_API_HOST: "0.0.0.0"
+    restart: unless-stopped
+
+  tunnel:
+    image: alpine:3.19
+    entrypoint: ["/bin/sh", "/entrypoint.sh"]
+    volumes:
+      - ./config:/config:ro
+      - ./bin/tunnel_entrypoint.sh:/entrypoint.sh:ro
+    depends_on:
+      - mac_api
+    restart: unless-stopped

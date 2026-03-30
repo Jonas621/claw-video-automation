@@ -1,0 +1,21 @@
+# Python
+.venv-tiktok/
+__pycache__/
+*.pyc
+*.pyo
+
+# Runtime data
+output/
+logs/
+state/
+
+# Secrets & real configs (use .example files for reference)
+config/mac_api.env
+config/.env
+config/vm_bridge.env
+config/*.bak*
+config/*.backup*
+TK_cookies_*.json
+
+# macOS
+.DS_Store

@@ -1,0 +1,12 @@
+.git
+__pycache__
+*.pyc
+*.pyo
+output/
+logs/
+state/
+.DS_Store
+config/mac_api.env.bak*
+config/mac_api.env.backup*
+config/vm_bridge.env*
+config/.env

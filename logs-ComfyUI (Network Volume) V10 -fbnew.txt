@@ -1,0 +1,500 @@
+2026-03-24  09:46:39.527 | info | vq4lknw16iwx69 | Finished.
+2026-03-24  09:46:39.527 | info | vq4lknw16iwx69 | worker-comfyui - Closing websocket connection.\n
+2026-03-24  09:46:39.527 | info | vq4lknw16iwx69 | \n
+2026-03-24  09:46:39.527 | info | vq4lknw16iwx69 | • Node 2 (class_type): CLIPLoader\n
+2026-03-24  09:46:39.527 | info | vq4lknw16iwx69 | • Node 2 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.527 | info | vq4lknw16iwx69 | • Node 2 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}]\n
+2026-03-24  09:46:39.527 | info | vq4lknw16iwx69 | • Node 1 (class_type): UNETLoader\n
+2026-03-24  09:46:39.527 | info | vq4lknw16iwx69 | • Node 1 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.527 | info | vq4lknw16iwx69 | • Node 1 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}]\n
+2026-03-24  09:46:39.527 | info | vq4lknw16iwx69 | • Node 3 (class_type): VAELoader\n
+2026-03-24  09:46:39.527 | info | vq4lknw16iwx69 | • Node 3 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.527 | info | vq4lknw16iwx69 | • Node 3 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}]\n
+2026-03-24  09:46:39.527 | info | vq4lknw16iwx69 | ValueError: Workflow validation failed:\n
+2026-03-24  09:46:39.527 | info | vq4lknw16iwx69 |     raise ValueError(detailed_message)\n
+2026-03-24  09:46:39.527 | info | vq4lknw16iwx69 |   File "/handler.py", line 427, in queue_workflow\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 |                       ^^^^^^^^^^^^^^^\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 |     queued_workflow = queue_workflow(\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 |   File "/handler.py", line 554, in handler\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 |     raise e\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 |   File "/handler.py", line 572, in handler\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | Traceback (most recent call last):\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 2 (class_type): CLIPLoader\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 2 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 2 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}]\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 1 (class_type): UNETLoader\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 1 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 1 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}]\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 3 (class_type): VAELoader\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 3 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 3 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}]\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | worker-comfyui - Value Error: Workflow validation failed:\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 2 (class_type): CLIPLoader\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 2 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 2 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}]\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 1 (class_type): UNETLoader\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 1 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 1 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}]\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 3 (class_type): VAELoader\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 3 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 3 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}]\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | worker-comfyui - Unexpected error queuing workflow: Workflow validation failed:\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | worker-comfyui - Parsed error data: {'error': {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}, 'node_errors': {'3': {'errors': [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}], 'dependent_outputs': ['10'], 'class_type': 'VAELoader'}, '1': {'errors': [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}], 'dependent_outputs': ['10'], 'class_type': 'UNETLoader'}, '2': {'errors': [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}], 'dependent_outputs': ['10'], 'class_type': 'CLIPLoader'}}}\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | 
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | Output will be ignored\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 |   - Value not in list: clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | * CLIPLoader 2:\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 |   - Value not in list: unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | * UNETLoader 1:\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 |   - Value not in list: vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | * VAELoader 3:\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | Failed to validate prompt for output 10:\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | got prompt\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | worker-comfyui - Websocket connected\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | worker-comfyui - Connecting to websocket: ws://127.0.0.1:8188/ws?clientId=d428c0d8-b757-41c3-a60e-3b549583f19a\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | worker-comfyui - API is reachable\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | worker-comfyui - Checking API server at http://127.0.0.1:8188/...\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | Started.
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | Jobs in progress: 1
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | Jobs in queue: 1
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | Finished.
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | worker-comfyui - Closing websocket connection.\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | \n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 2 (class_type): CLIPLoader\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 2 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 2 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}]\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 1 (class_type): UNETLoader\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 1 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.526 | info | vq4lknw16iwx69 | • Node 1 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}]\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 3 (class_type): VAELoader\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 3 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 3 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}]\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | ValueError: Workflow validation failed:\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 |     raise ValueError(detailed_message)\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 |   File "/handler.py", line 427, in queue_workflow\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 |                       ^^^^^^^^^^^^^^^\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 |     queued_workflow = queue_workflow(\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 |   File "/handler.py", line 554, in handler\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 |     raise e\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 |   File "/handler.py", line 572, in handler\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | Traceback (most recent call last):\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 2 (class_type): CLIPLoader\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 2 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 2 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}]\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 1 (class_type): UNETLoader\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 1 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 1 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}]\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 3 (class_type): VAELoader\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 3 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 3 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}]\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | worker-comfyui - Value Error: Workflow validation failed:\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 2 (class_type): CLIPLoader\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 2 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 2 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}]\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 1 (class_type): UNETLoader\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 1 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 1 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}]\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 3 (class_type): VAELoader\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 3 (dependent_outputs): ['10']\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | • Node 3 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}]\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | worker-comfyui - Unexpected error queuing workflow: Workflow validation failed:\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | worker-comfyui - Parsed error data: {'error': {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}, 'node_errors': {'3': {'errors': [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}], 'dependent_outputs': ['10'], 'class_type': 'VAELoader'}, '1': {'errors': [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}], 'dependent_outputs': ['10'], 'class_type': 'UNETLoader'}, '2': {'errors': [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}], 'dependent_outputs': ['10'], 'class_type': 'CLIPLoader'}}}\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | 
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | Output will be ignored\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 |   - Value not in list: clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | * CLIPLoader 2:\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 |   - Value not in list: unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | * UNETLoader 1:\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 |   - Value not in list: vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | * VAELoader 3:\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | Failed to validate prompt for output 10:\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | found 1 files\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | recursive file list on directory /comfyui/models/unet\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | found 1 files\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | recursive file list on directory /comfyui/models/vae_approx\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | got prompt\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | worker-comfyui - Websocket connected\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | worker-comfyui - Connecting to websocket: ws://127.0.0.1:8188/ws?clientId=00f56478-ea14-484e-9b0a-20baa8b84960\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | worker-comfyui - API is reachable\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | To see the GUI go to: http://127.0.0.1:8188\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | \n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | Starting server\n
+2026-03-24  09:46:39.525 | info | vq4lknw16iwx69 | No target revision found.\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Will assume non-transactional DDL.\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Context impl SQLiteImpl.\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Database URL: sqlite:////comfyui/user/comfyui.db\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | \n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 |    0.1 seconds: /comfyui/custom_nodes/ComfyUI-Manager\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 |    0.0 seconds: /comfyui/custom_nodes/websocket_image_save.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Import times for custom nodes:\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | \n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/custom_nodes/websocket_image_save.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | [ComfyUI-Manager] All startup tasks have been completed.\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Using selector: EpollSelector\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | ### ComfyUI Revision: 4177 [265adad8] *DETACHED | Released on '2025-11-04'\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Popen(['git', 'cat-file', '--batch'], cwd=/comfyui, stdin=<valid stream>, shell=False, universal_newlines=False)\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Popen(['git', 'cat-file', '--batch-check'], cwd=/comfyui, stdin=<valid stream>, shell=False, universal_newlines=False)\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Popen(['git', 'rev-list', 'HEAD', '--'], cwd=/comfyui, stdin=None, shell=False, universal_newlines=False)\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | sys.platform='linux', git_executable='git'\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | [ComfyUI-Manager] network_mode: offline\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | ### Loading: ComfyUI-Manager (V3.37.1)\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/custom_nodes/ComfyUI-Manager\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_wan.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_vidu.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_gemini.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_rodin.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_moonvalley.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_tripo.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_sora.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_runway.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_pika.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_stability.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_pixverse.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_recraft.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_luma.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_ltxv.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_bytedance.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_bfl.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_kling.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_veo2.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_minimax.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_openai.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_ideogram.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/canary.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_rope.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | found 1 files\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | recursive file list on directory /comfyui/models/audio_encoders\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_audio_encoder.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_easycache.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_model_patch.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_chroma_radiance.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_qwen.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_context_windows.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_tcfg.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_edit_model.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_camera_trajectory.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_string.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_ace.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_preview_any.py\n
+2026-03-24  09:46:39.524 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_apg.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_fresca.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_hidream.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_optimalsteps.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_cfg.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_primitive.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_hunyuan3d.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_lotus.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_wan.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_lumina2.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_video.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_cosmos.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_load_3d.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_hooks.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_lt.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_mahiro.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_slg.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_mochi.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_torch_compile.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_lora_extract.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_flux.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_eps.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_hunyuan.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_controlnet.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_gits.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | found 1 files\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | recursive file list on directory /comfyui/models/clip\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_sd3.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_audio.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_webcam.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_advanced_samplers.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_attention_multiply.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_align_your_steps.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_pag.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_model_merging_model_specific.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_ip2p.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_differential_diffusion.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_stable_cascade.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_morphology.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_cond.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_pixart.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | found 1 files\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | recursive file list on directory /comfyui/models/photomaker\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_photomaker.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_sdupscale.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_stable3d.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_perpneg.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_sag.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_train.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_video_model.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_images.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_model_downscale.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_model_advanced.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_hypertile.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_custom_sampler.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_freelunch.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_canny.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_clip_sdxl.py\n
+2026-03-24  09:46:39.523 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_tomesd.py\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_model_merging.py\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_rebatch.py\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_compositing.py\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_mask.py\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_post_processing.py\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | found 1 files\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | recursive file list on directory /comfyui/models/upscale_models\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_upscale_model.py\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | found 1 files\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | recursive file list on directory /comfyui/models/hypernetworks\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_hypernetwork.py\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_latent.py\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | [Prompt Server] web root: /opt/venv/lib/python3.12/site-packages/comfyui_frontend_package/static\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | ComfyUI frontend version: 1.28.8\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | Using selector: EpollSelector\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | ComfyUI version: 0.3.68\n
+2026-03-24  09:46:39.522 | info | vq4lknw16iwx69 | Python version: 3.12.3 (main, Aug 14 2025, 17:47:21) [GCC 13.3.0]\n
+2026-03-24  09:21:00.904 | info | vq4lknw16iwx69 | Finished.
+2026-03-24  09:21:00.904 | info | vq4lknw16iwx69 | worker-comfyui - Closing websocket connection.\n
+2026-03-24  09:21:00.904 | info | vq4lknw16iwx69 | \n
+2026-03-24  09:21:00.904 | info | vq4lknw16iwx69 | • Node 1 (class_type): UNETLoader\n
+2026-03-24  09:21:00.904 | info | vq4lknw16iwx69 | • Node 1 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.904 | info | vq4lknw16iwx69 | • Node 1 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}]\n
+2026-03-24  09:21:00.904 | info | vq4lknw16iwx69 | • Node 2 (class_type): CLIPLoader\n
+2026-03-24  09:21:00.904 | info | vq4lknw16iwx69 | • Node 2 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 2 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}]\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 3 (class_type): VAELoader\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 3 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 3 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}]\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | ValueError: Workflow validation failed:\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |     raise ValueError(detailed_message)\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |   File "/handler.py", line 427, in queue_workflow\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |                       ^^^^^^^^^^^^^^^\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |     queued_workflow = queue_workflow(\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |   File "/handler.py", line 554, in handler\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |     raise e\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |   File "/handler.py", line 572, in handler\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | Traceback (most recent call last):\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 1 (class_type): UNETLoader\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 1 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 1 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}]\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 2 (class_type): CLIPLoader\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 2 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 2 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}]\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 3 (class_type): VAELoader\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 3 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 3 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}]\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | worker-comfyui - Value Error: Workflow validation failed:\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 1 (class_type): UNETLoader\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 1 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 1 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}]\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 2 (class_type): CLIPLoader\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 2 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 2 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}]\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 3 (class_type): VAELoader\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 3 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 3 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}]\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | worker-comfyui - Unexpected error queuing workflow: Workflow validation failed:\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | worker-comfyui - Parsed error data: {'error': {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}, 'node_errors': {'3': {'errors': [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}], 'dependent_outputs': ['10'], 'class_type': 'VAELoader'}, '2': {'errors': [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}], 'dependent_outputs': ['10'], 'class_type': 'CLIPLoader'}, '1': {'errors': [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}], 'dependent_outputs': ['10'], 'class_type': 'UNETLoader'}}}\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | 
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | Output will be ignored\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |   - Value not in list: unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | * UNETLoader 1:\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |   - Value not in list: clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | * CLIPLoader 2:\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |   - Value not in list: vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | * VAELoader 3:\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | Failed to validate prompt for output 10:\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | got prompt\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | worker-comfyui - Websocket connected\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | worker-comfyui - Connecting to websocket: ws://127.0.0.1:8188/ws?clientId=47b24f16-4f62-420e-91ff-660b90d46a90\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | worker-comfyui - API is reachable\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | worker-comfyui - Checking API server at http://127.0.0.1:8188/...\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | Started.
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | Jobs in progress: 1
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | Jobs in queue: 1
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | Finished.
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | worker-comfyui - Closing websocket connection.\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | \n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 1 (class_type): UNETLoader\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 1 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 1 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}]\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 2 (class_type): CLIPLoader\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 2 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 2 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}]\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 3 (class_type): VAELoader\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 3 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 3 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}]\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | ValueError: Workflow validation failed:\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |     raise ValueError(detailed_message)\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |   File "/handler.py", line 427, in queue_workflow\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |                       ^^^^^^^^^^^^^^^\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |     queued_workflow = queue_workflow(\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |   File "/handler.py", line 554, in handler\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |     raise e\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 |   File "/handler.py", line 572, in handler\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | Traceback (most recent call last):\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 1 (class_type): UNETLoader\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 1 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 1 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}]\n
+2026-03-24  09:21:00.903 | info | vq4lknw16iwx69 | • Node 2 (class_type): CLIPLoader\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | • Node 2 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | • Node 2 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}]\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | • Node 3 (class_type): VAELoader\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | • Node 3 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | • Node 3 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}]\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | worker-comfyui - Value Error: Workflow validation failed:\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | • Node 1 (class_type): UNETLoader\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | • Node 1 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | • Node 1 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}]\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | • Node 2 (class_type): CLIPLoader\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | • Node 2 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | • Node 2 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}]\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | • Node 3 (class_type): VAELoader\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | • Node 3 (dependent_outputs): ['10']\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | • Node 3 (errors): [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}]\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | worker-comfyui - Unexpected error queuing workflow: Workflow validation failed:\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | worker-comfyui - Parsed error data: {'error': {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}, 'node_errors': {'3': {'errors': [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']", 'extra_info': {'input_name': 'vae_name', 'input_config': [['pixel_space'], {}], 'received_value': 'wan_2.2_vae.safetensors'}}], 'dependent_outputs': ['10'], 'class_type': 'VAELoader'}, '2': {'errors': [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []", 'extra_info': {'input_name': 'clip_name', 'input_config': [[], {}], 'received_value': 'umt5_xxl_fp8_e4m3fn_scaled.safetensors'}}], 'dependent_outputs': ['10'], 'class_type': 'CLIPLoader'}, '1': {'errors': [{'type': 'value_not_in_list', 'message': 'Value not in list', 'details': "unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []", 'extra_info': {'input_name': 'unet_name', 'input_config': [[], {}], 'received_value': 'wan2.2_t2v_14B_fp8.safetensors'}}], 'dependent_outputs': ['10'], 'class_type': 'UNETLoader'}}}\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | 
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Output will be ignored\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 |   - Value not in list: unet_name: 'wan2.2_t2v_14B_fp8.safetensors' not in []\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | * UNETLoader 1:\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 |   - Value not in list: clip_name: 'umt5_xxl_fp8_e4m3fn_scaled.safetensors' not in []\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | * CLIPLoader 2:\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 |   - Value not in list: vae_name: 'wan_2.2_vae.safetensors' not in ['pixel_space']\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | * VAELoader 3:\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Failed to validate prompt for output 10:\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | found 1 files\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | recursive file list on directory /comfyui/models/unet\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | found 1 files\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | recursive file list on directory /comfyui/models/vae_approx\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | got prompt\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | worker-comfyui - Websocket connected\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | worker-comfyui - Connecting to websocket: ws://127.0.0.1:8188/ws?clientId=543f3b4a-6467-4880-8f8f-4c7b73f71736\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | worker-comfyui - API is reachable\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | To see the GUI go to: http://127.0.0.1:8188\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | \n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Starting server\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | No target revision found.\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Will assume non-transactional DDL.\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Context impl SQLiteImpl.\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Database URL: sqlite:////comfyui/user/comfyui.db\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | \n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 |    0.1 seconds: /comfyui/custom_nodes/ComfyUI-Manager\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 |    0.0 seconds: /comfyui/custom_nodes/websocket_image_save.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Import times for custom nodes:\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | \n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/custom_nodes/websocket_image_save.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | [ComfyUI-Manager] All startup tasks have been completed.\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Using selector: EpollSelector\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | ### ComfyUI Revision: 4177 [265adad8] *DETACHED | Released on '2025-11-04'\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Popen(['git', 'cat-file', '--batch'], cwd=/comfyui, stdin=<valid stream>, shell=False, universal_newlines=False)\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Popen(['git', 'cat-file', '--batch-check'], cwd=/comfyui, stdin=<valid stream>, shell=False, universal_newlines=False)\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Popen(['git', 'rev-list', 'HEAD', '--'], cwd=/comfyui, stdin=None, shell=False, universal_newlines=False)\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | sys.platform='linux', git_executable='git'\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | [ComfyUI-Manager] network_mode: offline\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | ### Loading: ComfyUI-Manager (V3.37.1)\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/custom_nodes/ComfyUI-Manager\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_wan.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_vidu.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_gemini.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_rodin.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_moonvalley.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_tripo.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_sora.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_runway.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_pika.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_stability.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_pixverse.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_recraft.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_luma.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_ltxv.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_bytedance.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_bfl.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_kling.py\n
+2026-03-24  09:21:00.902 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_veo2.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_minimax.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_openai.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/nodes_ideogram.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_api_nodes/canary.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_rope.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | found 1 files\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | recursive file list on directory /comfyui/models/audio_encoders\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_audio_encoder.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_easycache.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_model_patch.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_chroma_radiance.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_qwen.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_context_windows.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_tcfg.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_edit_model.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_camera_trajectory.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_string.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_ace.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_preview_any.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_apg.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_fresca.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_hidream.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_optimalsteps.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_cfg.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_primitive.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_hunyuan3d.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_lotus.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_wan.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_lumina2.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_video.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_cosmos.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_load_3d.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_hooks.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_lt.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_mahiro.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_slg.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_mochi.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_torch_compile.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_lora_extract.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_flux.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_eps.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_hunyuan.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_controlnet.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_gits.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | found 1 files\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | recursive file list on directory /comfyui/models/clip\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_sd3.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_audio.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_webcam.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_advanced_samplers.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_attention_multiply.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_align_your_steps.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_pag.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_model_merging_model_specific.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_ip2p.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_differential_diffusion.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_stable_cascade.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_morphology.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_cond.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_pixart.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | found 1 files\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | recursive file list on directory /comfyui/models/photomaker\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_photomaker.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_sdupscale.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_stable3d.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_perpneg.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_sag.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_train.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_video_model.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_images.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_model_downscale.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_model_advanced.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_hypertile.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_custom_sampler.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_freelunch.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_canny.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_clip_sdxl.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_tomesd.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_model_merging.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_rebatch.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_compositing.py\n
+2026-03-24  09:21:00.901 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_mask.py\n
+2026-03-24  09:21:00.900 | info | vq4lknw16iwx69 | Trying to load custom node /comfyui/comfy_extras/nodes_post_processing.py\n
